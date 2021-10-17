@@ -4,11 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "stylelint src/ && eslint ./src/",
-    "style:lint": "stylelint src/",
-    "style:fix": "stylelint src/ --fix",
-    "js:lint": "eslint ./src/",
-    "js:fix": "eslint ./src/ --fix",
+    "lint": "stylelint projects/1_SkyproCode/src/ && stylelint projects/2_Hi-coffee/src/ && stylelint projects/3_Fortune-teller/src/ && stylelint projects/4_Drag-it/src/ && stylelint projects/5_Zhe-ne/src/ && stylelint projects/6_SkyproTables/src/ && eslint ./projects/1_SkyproCode/src/ && eslint ./projects/2_Hi-coffee/src/ && eslint ./projects/3_Fortune-teller/src/ && eslint ./projects/4_Drag-it/src/ && eslint ./projects/5_Zhe-ne/src/ && eslint ./projects/6_SkyproTables/src/",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -17,16 +13,24 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.0.0",
     "@typescript-eslint/parser": "5.0.0",
+    "css-loader": "6.4.0",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-import": "2.22.1",
+    "file-loader": "6.2.0",
+    "html-loader": "2.1.2",
+    "html-webpack-plugin": "5.3.2",
     "husky": "7.0.2",
+    "mini-css-extract-plugin": "2.4.2",
     "stylelint": "13.13.1",
     "stylelint-config-standard": "22.0.0",
     "stylelint-order": "4.1.0",
     "stylelint-plugin-stylus": "0.11.0",
     "stylus": "0.55.0",
-    "typescript": "4.4.3"
+    "stylus-loader": "6.2.0",
+    "webpack": "5.58.1",
+    "webpack-cli": "4.9.0",
+    "webpack-dev-server": "4.3.1"
   },
   "description": ""
 }
