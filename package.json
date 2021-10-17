@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "stylelint projects/1_SkyproCode/src/ && stylelint projects/2_Hi-coffee/src/ && stylelint projects/3_Fortune-teller/src/ && stylelint projects/4_Drag-it/src/ && stylelint projects/5_Zhe-ne/src/ && stylelint projects/6_SkyproTables/src/ && eslint ./projects/1_SkyproCode/src/ && eslint ./projects/2_Hi-coffee/src/ && eslint ./projects/3_Fortune-teller/src/ && eslint ./projects/4_Drag-it/src/ && eslint ./projects/5_Zhe-ne/src/ && eslint ./projects/6_SkyproTables/src/",
+    "lint": "stylelint projects/1_SkyproCode/src/ && stylelint projects/2_Hi-coffee/src/ && stylelint projects/3_Fortune-teller/src/ && stylelint projects/4_Drag-it/src/ && stylelint projects/5_Zhe-ne/src/ && stylelint projects/6_SkyproTables/src/ && eslint ./projects/1_SkyproCode/src/ && eslint ./projects/3_Fortune-teller/src/ && eslint ./projects/4_Drag-it/src/ && eslint ./projects/5_Zhe-ne/src/ && eslint ./projects/6_SkyproTables/src/",
     "prepare": "husky install"
   },
   "keywords": [],
