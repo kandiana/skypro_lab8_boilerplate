@@ -4,12 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.ts',
+  entry: './src/index.coffee',
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
+        test: /\.coffee$/,
+        loader: 'coffee-loader',
         exclude: /node_modules/
       },
       {
@@ -30,20 +30,21 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'file-loader'
-          },
-          {
-            loader: 'svgo-loader'
+        test: /\.(svg)(\?.*)?$/,
+        loader: 'inline-svgo-loader',
+        options: {
+          svgo: {},
+          limit: 4 * 1024,
+          fallback: {
+            loader: 'file-loader',
+            options: { name: '[name].svg' }
           }
-        ]
+        }
       }
     ]
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.coffee', '.js'],
     alias: {
       '~': path.resolve(__dirname, 'src')
     }

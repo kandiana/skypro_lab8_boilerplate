@@ -1,0 +1,8 @@
+{
+  "parser": "eslint-plugin-coffee",
+  "plugins": ["coffee"],
+  "extends": ["plugin:coffee/airbnb-base"],
+  "rules": {
+    "coffee/no-unused-vars": "warn"
+  }
+}
