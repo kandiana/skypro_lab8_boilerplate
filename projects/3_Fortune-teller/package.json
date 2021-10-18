@@ -16,5 +16,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "inline-svgo-loader": "4.0.0",
+    "svg-cards": "4.0.0",
+    "svgo": "2.7.0",
+    "ts-loader": "9.2.6",
+    "typescript": "4.4.3"
+  }
 }
