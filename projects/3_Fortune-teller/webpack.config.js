@@ -30,15 +30,16 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'file-loader'
-          },
-          {
-            loader: 'svgo-loader'
+        test: /\.(svg)(\?.*)?$/,
+        loader: 'inline-svgo-loader',
+        options: {
+          svgo: {},
+          limit: 4 * 1024,
+          fallback: {
+            loader: 'file-loader',
+            options: { name: '[name].svg' }
           }
-        ]
+        }
       }
     ]
   },

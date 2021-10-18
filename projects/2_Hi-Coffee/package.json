@@ -2,12 +2,12 @@
   "name": "Hi-Coffee",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.coffee",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "stylelint src/ && eslint ./src/",
+    "lint": "stylelint src/ && eslint ./src/**/*.coffee",
     "style:lint": "stylelint src/",
     "style:fix": "stylelint src/ --fix",
     "js:lint": "eslint ./src/",
@@ -16,5 +16,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "coffee-loader": "3.0.0",
+    "coffeescript": "2.6.1",
+    "eslint-plugin-coffee": "0.1.15",
+    "inline-svgo-loader": "4.0.0",
+    "svgo": "2.7.0"
+  }
 }
